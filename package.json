@@ -1,15 +1,30 @@
 {
-  "name": "protect",
+  "name": "test",
   "version": "1.0.0",
   "description": "test code",
   "main": "index.js",
-  "dependencies": {
-    "jasmine": "^3.5.0",
-    "protractor": "^7.0.0"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report": "allure generate allure-results --clean -o allure-report || true"
   },
   "author": "vignesh",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "excel": "^1.0.1",
+    "exceljs": "^4.1.1",
+    "jasmine": "^3.5.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
